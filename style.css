@@ -1,0 +1,62 @@
+.name{
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Roboto';
+  font-style: normal;
+  color: bisque;
+}
+body{
+  background-image: url(/img/bg.png);
+  background-repeat: no-repeat;
+  background-color: #1C1A19;
+  background-position-y: 118%;
+  background-position-x: 100%;
+}
+.toolbar{
+  display: flex;
+  align-items: center;
+  background-color: #3C3A39;
+  justify-content: space-between;
+  height: 5rem;
+  width: 100%;
+  padding: 0 1.25rem;
+}
+h1{
+display: flex;
+font-family: 'Crete Round';
+font-style: normal;
+font-weight: 400;
+font-size: 60px;
+line-height: 60px;
+letter-spacing: 0.33px;
+color: #FF6B00
+}
+h2{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 133%px;
+display: flex;
+align-items: center;
+color: #FFF5E1;
+}
+h3{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #FFFFFF;
+}
+.social{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 120px;
+}
+.accounts{
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
