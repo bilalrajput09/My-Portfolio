@@ -6,11 +6,9 @@
   color: bisque;
 }
 body{
-  background-image: url(/img/bg.png);
+  background-image: url(./img/bg.png);
   background-repeat: no-repeat;
   background-color: #1C1A19;
-  background-position-y: 118%;
-  background-position-x: 100%;
 }
 .toolbar{
   display: flex;
@@ -54,6 +52,7 @@ color: #FFFFFF;
   align-items: center;
   list-style: none;
   margin-bottom: 120px;
+
 }
 .accounts{
   display: flex;

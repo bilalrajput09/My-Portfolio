@@ -16,9 +16,9 @@
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
 
-# 📖 [Set-up-a-Hello-Microverse-project] <a name="about-project"></a>
+# 📖 [Set-up-mobile-first-portfolio] <a name="about-project"></a>
 
-**[Set-up-a-Hello-Microverse-project]** is a project in which we will setup linters and html file and change the color of text by using external style.css file.
+**[Set-up-mobile-first-portfolio]** is a project in which we use our knowledge about html and css also the knowledge about linters.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -86,6 +86,6 @@ I would like to appreciate my team members.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./License) licensed.
+This project is [MIT](./license) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
