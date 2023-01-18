@@ -11,7 +11,7 @@ body {
   background-position: 100% 150%;
 }
 
-nav {
+header {
   background-color: #3c3a39;
   display: flex;
   color: white;
@@ -41,7 +41,7 @@ nav {
 }
 
 .intro1 {
-  margin: 0.5rem;
+  margin: 120px 0 0 8px ;
   font-family: 'Crete Round', sans-serif;
   letter-spacing: 0.37px;
   font-size: 56px;
