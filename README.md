@@ -1,4 +1,5 @@
 # My-Portfolio
+
 <a name="readme-top"></a>
 
 # 📗 Table of Contents
@@ -18,13 +19,13 @@
 
 # 📖 [Set-up-mobile-first-portfolio] <a name="about-project"></a>
 
-**[Set-up-mobile-first-portfolio]** is a project in which we use our knowledge about html and css also the knowledge about linters.
+**[Set-up-mobile-first-portfolio]** is a project in which we use our knowledge about html and css and we will add linters to make sure the code is clean.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-I used VS code to create the project and files needed plus used Git and GitHub to complete the tasks. I used templates as well.
+I used VS code to create the project and files needed plus used Git and GitHub to complete the tasks. I used templates as well as flexbox for layout.
 
 ### Key Features <a name="key-features"></a>
 
@@ -38,13 +39,13 @@ It will show my sample portfolio.
 
 ### Prerequisites
 
-In order to run this project you need to clone the repo using git bash and run the html file in browser using VS code.
+In order to run this project you need to clone the repo using [git clone here](https://github.com/bilalrajput09/My-Portfolio.git) git bash and run the html file in browser using VS code.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Authors <a name="authors"></a>
 
- Bilal Ahmed
+Bilal Ahmed
 
 👤 **Author1**
 
@@ -79,7 +80,7 @@ Look at what I did !! Your support matters a lot
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank Microverse for giving us the chance to build a better world.
-I would like to appreciate my team members. 
+I would like to appreciate my team members.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- LICENSE -->

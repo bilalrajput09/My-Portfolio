@@ -1,68 +1,79 @@
-.name {
-  text-decoration: none;
-  font-size: 20px;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  color: bisque;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #1C1A19;
+    background-image: url(./img/bg.png);
+    background-repeat: no-repeat;
+    background-position: 100% 150%;
+    
+}
+nav{
+    background-color: #3C3A39;
+    display: flex;
+    color: white;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.title{
+    margin: 1.5rem;
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto' , sans-serif;
+    font-weight: 700;
+}
+.menu{
+    margin: 1.5rem;
+    height: 1 rem;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    justify-content: space-around;
+
+}
+.intro1{
+    margin: 0.5rem;
+    font-family: 'Crete Round' , sans-serif;
+    letter-spacing: 0.37px;
+    font-size: 56px;
+    line-height: 64px;
+    color: #FF6B00;
+}
+.intro2 {
+    margin: 0.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    color: #fff5E1;
+}
+.discription {
+    margin: 0.5rem;
+    font-family: 'Poppins' , sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.icons{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-content: flex-start;
+    margin: 1rem;
+    align-items: center;
+
+}
+li{
+    margin: 0.5rem;
+    width: 30px;
 }
 
-body {
-  background-repeat: no-repeat;
-  background-color: #1c1a19;
-  width: 100%;
-  height: 100%;
-}
 
-.toolbar {
-  display: flex;
-  align-items: center;
-  background-color: #3c3a39;
-  justify-content: space-between;
-  height: 5rem;
-  width: 97%;
-  padding: 0 1.25rem;
-}
-
-h1 {
-  display: flex;
-  font-family: 'Crete Round', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 60px;
-  line-height: 60px;
-  letter-spacing: 0.33px;
-  color: #ff6b00;
-}
-
-h2 {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 133%;
-  display: flex;
-  align-items: center;
-  color: #fff5e1;
-}
-
-h3 {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #fff;
-}
-
-.social {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  margin-bottom: 120px;
-}
-
-.accounts {
-  display: flex;
-  align-items: center;
-  list-style: none;
-}
