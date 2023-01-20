@@ -25,7 +25,7 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-I used VS code to create the project and files needed plus used Git and GitHub to complete the tasks. I used templates as well as flexbox for layout.
+I used VS code to create the project and files needed plus used Git and GitHub to complete the tasks. I used templates as well as flexbox for layout plus css grid layout.
 
 ### Key Features <a name="key-features"></a>
 
@@ -35,7 +35,7 @@ I used VS code to create the project and files needed plus used Git and GitHub t
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-It will show my sample portfolio.
+It will show my sample portfolio mobile site.
 
 ### Prerequisites
 
@@ -60,6 +60,7 @@ Bilal Ahmed
 - [ ] **[Search Bar]**
 - [ ] **[ Forms ]**
 - [ ] **[Professional Layout]**
+- [ ] **[Desktop Version]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
