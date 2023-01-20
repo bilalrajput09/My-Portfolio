@@ -3,11 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 li {
   list-style: none;
 }
-
 body {
   background-color: #1c1a19;
   background-image: url(./img/bg.png);
@@ -15,7 +13,6 @@ body {
   background-position-x: right;
   background-position-y: 18rem;
 }
-
 header {
   background-color: #3c3a39;
   display: flex;
@@ -24,7 +21,6 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
 .title {
   margin: 1.5rem;
   text-decoration: none;
@@ -32,19 +28,16 @@ header {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
 }
-
 .menu {
   margin: 1.5rem;
   height: 1 rem;
 }
-
 .main {
   display: flex;
   flex-direction: column;
   margin: 1rem;
   justify-content: space-around;
 }
-
 .intro1 {
   margin: 120px 0 0 8px;
   font-family: 'Crete Round', sans-serif;
@@ -53,7 +46,6 @@ header {
   line-height: 64px;
   color: #ff6b00;
 }
-
 .intro2 {
   margin: 0.5rem;
   font-family: 'Roboto', sans-serif;
@@ -62,7 +54,6 @@ header {
   font-weight: 700;
   color: #fff5e1;
 }
-
 .discription {
   margin: 0.5rem;
   font-family: 'Poppins', sans-serif;
@@ -71,7 +62,6 @@ header {
   line-height: 24px;
   color: #fff;
 }
-
 .icons {
   display: flex;
   list-style: none;
@@ -80,32 +70,22 @@ header {
   margin: 1.5rem;
   width: 30px;
 }
-
 .icons > li {
   margin-right: 21px;
 }
-
 .section-two {
   background-color: white;
 }
-
 .main-container {
   display: grid;
   justify-content: center;
-
-  /* background-color: red; */
 }
-
-/* .card1{
-  background-image: url(./img/project-img.png);
-} */
 .main-part {
   display: flex;
   flex-direction: column;
   margin-left: 1.5rem;
   justify-content: space-between;
 }
-
 .main-part > h1 {
   text-align: center;
   margin-top: 120px;
@@ -115,16 +95,13 @@ header {
   font-size: 40px;
   line-height: 52px;
 }
-
 .placeholder {
   margin-right: 1.5rem;
 }
-
 .sepration-line {
   margin-top: 30px;
   margin-bottom: 80px;
 }
-
 .main-part > h2 {
   margin: 24px 0 12px 0;
   font-family: 'Crete Round', sans-serif;
@@ -134,7 +111,6 @@ header {
   font-size: 32px;
   line-height: 44px;
 }
-
 .main-part > p {
   margin-bottom: 12px;
   font-family: 'Inter', sans-serif;
@@ -147,14 +123,12 @@ header {
 
   /* margin-bottom: 12px; */
 }
-
 .languages-1 {
   margin-left: 1.5rem;
   align-content: center;
   display: flex;
   flex-direction: row;
 }
-
 .languages-1 > li {
   padding: 10px;
   font-family: 'Inter', sans-serif;
@@ -167,19 +141,15 @@ header {
   border: 1px solid #8993a4;
   list-style: none;
 }
-
 .css {
   width: 49px;
 }
-
 .html {
   width: 56px;
 }
-
 .javascript {
   width: 95px;
 }
-
 .project1 {
   width: 124px;
   height: 48px;
@@ -195,7 +165,6 @@ header {
   text-decoration: none;
   font-family: 'Inter', sans-serif;
 }
-
 .card1 {
   display: flex;
   flex-direction: column;
@@ -207,7 +176,6 @@ header {
   margin-right: 1.5rem;
   color: white;
 }
-
 .card1 > h1 {
   margin-top: 180px;
   margin-left: 20px;
@@ -217,7 +185,6 @@ header {
   font-size: 32px;
   line-height: 44px;
 }
-
 .card1 > p {
   margin-top: 12px;
   margin-left: 20px;
@@ -227,7 +194,6 @@ header {
   font-size: 16px;
   line-height: 24px;
 }
-
 .project2 {
   height: 48px;
   margin-top: 34px;
@@ -240,12 +206,10 @@ header {
   font-size: 17px;
   line-height: 24px;
 }
-
 .languages-2 {
   display: flex;
   flex-direction: row;
 }
-
 .languages-2 > li {
   font-family: 'Inter', sans-serif;
   text-decoration: none;
@@ -261,19 +225,15 @@ header {
   padding: 10px 10px;
   margin-left: 20px;
 }
-
 .css2 {
   width: 49px;
 }
-
 .html2 {
   width: 56px;
 }
-
 .javascript2 {
   width: 95px;
 }
-
 .about-me {
   background-color: #1c1a19;
   background-image: url(./img/backgound-about-me.png);
@@ -284,7 +244,6 @@ header {
   background-position-x: 70vw;
   background-position-y: 70vh;
 }
-
 .about-me > h1 {
   margin-top: 120px;
   margin-left: 1.5rem;
@@ -296,7 +255,6 @@ header {
   line-height: 88px;
   color: #ff6b00;
 }
-
 .about-me > p {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -308,11 +266,9 @@ header {
   margin-right: 1.5rem;
   margin-bottom: 24px;
 }
-
 .about-me > button {
   flex-direction: row;
 }
-
 .resume > a {
   text-decoration: none;
   color: white;
@@ -331,14 +287,12 @@ header {
   display: block;
   padding: 12px;
 }
-
 .sepration-line2 {
   margin-top: 209px;
   margin-right: 1.5rem;
   margin-left: 1.5rem;
   margin-bottom: 137px;
 }
-
 .box {
   background: #ff6b00;
   width: 18px;
@@ -346,7 +300,6 @@ header {
   margin-right: 12px;
   transform: rotate(-45deg);
 }
-
 .language {
   display: flex;
   color: white;
@@ -356,7 +309,6 @@ header {
   justify-content: center;
   align-items: center;
 }
-
 .language > h1 {
   color: white;
   font-style: normal;
@@ -365,7 +317,6 @@ header {
   line-height: 44px;
   font-family: 'Inter', sans-serif;
 }
-
 .languages-3 {
   display: flex;
   flex-direction: column;
@@ -377,35 +328,28 @@ header {
   color: white;
   font-family: 'Inter', sans-serif;
 }
-
 .languages-3 > .one {
   margin-top: 45px;
   margin-bottom: 32px;
 }
-
 .languages-3 > .two {
   margin-bottom: 32px;
 }
-
 .languages-3 > .three {
   margin-bottom: 32px;
 }
-
 .languages-3 > .four {
   margin-bottom: 32px;
 }
-
 .languages-3 > .five {
   margin-bottom: 32px;
 }
-
 .box2 {
   background: #ff6b00;
   width: 18px;
   height: 18px;
   margin-right: 12px;
 }
-
 .box3 {
   background: #ff6b00;
   width: 18px;
@@ -414,14 +358,12 @@ header {
   border-radius: 100%;
   margin-top: 12px;
 }
-
 .skills {
   /* margin-left: 145px;
   margin-right: 115px; */
   padding-right: 40px;
   margin-top: 12px;
 }
-
 .frameworks {
   padding-left: 12px;
 }
