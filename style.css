@@ -242,7 +242,6 @@ header {
   flex-direction: row;
 }
 
-
 .languages-2 > li {
   font-family: 'Inter', sans-serif;
   text-decoration: none;
@@ -269,7 +268,7 @@ header {
 
 .javascript2 {
   width: 95px;
- } 
+}
 
 .about-me {
   background-color: #1c1a19;
@@ -421,14 +420,17 @@ header {
   padding-left: 12px;
 }
 
-.project1:hover , .project2:hover{
+.project1:hover,
+.project2:hover {
   background-color: #daa884;
   cursor: pointer;
 }
-#resume:hover{
+
+#resume:hover {
   background-color: #daa884;
   cursor: pointer;
 }
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -441,7 +443,7 @@ header {
   font-size: 32px;
   line-height: 44px;
   margin: 120px 24px 105px;
-  color: #172B4D;
+  color: #172b4d;
   text-align: center;
   min-height: 216px;
   justify-content: center;
@@ -464,7 +466,7 @@ header {
 }
 
 #textarea-1 {
-  background-color: #FBF8F7;
+  background-color: #fbf8f7;
   color: black;
 }
 
@@ -479,7 +481,7 @@ input::placeholder {
 
 #get-in-touch {
   text-decoration: none;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -515,6 +517,6 @@ footer {
   align-items: center;
 }
 
-.icons-1>li {
+.icons-1 > li {
   margin: 21px;
 }
