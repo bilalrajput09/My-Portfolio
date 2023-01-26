@@ -747,7 +747,8 @@ footer {
   }
 
   .cards:hover {
-    background-image: url(./img/Img\ Placeholder\ \(3\) .png);
+    background-image: url(./img/Img\ Placeholder\ \(3\).png);
+    border: 2px solid black;
   }
 
   .cards:hover .data {
@@ -776,7 +777,7 @@ footer {
 
   .cards:hover .cards-project {
     display: block;
-    margin-top: 320px;
+    margin-top: 315px;
   }
 
   .about-me {
