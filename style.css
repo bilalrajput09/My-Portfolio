@@ -3,9 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-.section-1{
-
-}
 
 li {
   list-style: none;
@@ -113,30 +110,32 @@ header {
   font-size: 40px;
   line-height: 52px;
 }
-.placeholder-multistories{
+
+.placeholder-multistories {
   display: flex;
   justify-content: left;
   margin-top: 80px;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
-
 }
-.placeholder{
+
+.placeholder {
   max-width: 100%;
   max-height: 100%;
 }
-.recent-work{
+
+.recent-work {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(1 , 1fr);
+  grid-template-rows: repeat(1, 1fr);
 }
-.multistories{
+
+.multistories {
   display: flex;
   flex-direction: column;
   gap: 12px;
   margin: 1.5rem;
 }
-
 
 .main-part > h2 {
   margin: 24px 0 12px 0;
@@ -207,36 +206,13 @@ header {
   font-family: 'Inter', sans-serif;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.cards{
+.cards {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
-
 
 .card1 {
   display: flex;
@@ -250,7 +226,6 @@ header {
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
-
 }
 
 .card-content > h1 {
@@ -284,15 +259,14 @@ header {
   font-size: 17px;
   line-height: 24px;
   margin-top: 24px;
-  height: 58px;
   width: 369px;
-
 }
- .card-content{
+
+.card-content {
   margin-top: -20px;
   margin-right: 1.5rem;
   margin-left: 1.5rem;
- } 
+}
 
 .languages-2 {
   display: flex;
@@ -317,6 +291,7 @@ header {
 
 .css2 {
   width: 49px;
+
   /* margin-bottom: 26px; */
 }
 
@@ -328,52 +303,18 @@ header {
   width: 95px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .about-me {
   background-color: #1c1a19;
   margin-top: 120px;
   display: flex;
   flex-direction: column;
+
   /* margin-left: 1.5rem; */
 }
-.section-3{
+
+.section-3 {
   background-image: url(./img/backgound-about-me.png);
-  background-color:#1c1a19;
+  background-color: #1c1a19;
   background-repeat: no-repeat;
   background-position-x: 70vw;
   background-position-y: 110vh;
@@ -428,32 +369,10 @@ header {
 
 .sepration-line2 {
   margin-top: 215px;
-  margin-left: 4.5rem; 
+  margin-left: 4.5rem;
   margin-bottom: 137px;
   width: 327px;
-  
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .language {
   display: flex;
@@ -464,6 +383,7 @@ header {
   justify-content: center;
   align-items: center;
 }
+
 .frameworks {
   display: flex;
   color: white;
@@ -473,6 +393,7 @@ header {
   justify-content: center;
   align-items: center;
 }
+
 .skill {
   display: flex;
   color: white;
@@ -490,27 +411,29 @@ header {
   font-size: 32px;
   line-height: 44px;
   font-family: 'Inter', sans-serif;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
-.frameworks>h1 {
+.frameworks > h1 {
   color: white;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
   font-family: 'Inter', sans-serif;
-  margin-top: 0px;
+  margin-top: 0;
 }
-.skill>h1 {
+
+.skill > h1 {
   color: white;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
   font-family: 'Inter', sans-serif;
-  margin-top: 0px;
+  margin-top: 0;
 }
+
 .languages-3 {
   display: flex;
   flex-direction: column;
@@ -544,7 +467,6 @@ header {
   margin-bottom: 32px;
 }
 
-
 .skills {
   margin-right: 1.5rem;
   margin-top: 12px;
@@ -562,17 +484,6 @@ header {
   background-color: #daa884;
   cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .contact {
   display: flex;
@@ -673,61 +584,67 @@ footer {
 .icons-1 > li {
   margin: 21px;
 }
-.Navigation{
+
+.Navigation {
   display: none;
 }
+
 /* Responsive design starts from there */
 
-@media screen and (min-width: 789px ) {
-  .menu{
+@media screen and (min-width: 789px) {
+  .menu {
     display: none;
   }
-  .Navigation{
+
+  .Navigation {
     display: flex;
     text-decoration: none;
-    align-items: flex-end;
     gap: 32px;
     justify-content: center;
     align-items: center;
     margin-right: 151px;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
     color: white;
   }
+
   a {
     text-decoration: none;
     color: white;
   }
+
   .title {
     margin-left: 151px;
     margin-top: 26px;
     margin-bottom: 26px;
   }
+
   .main {
     width: 100%;
     margin-left: 143px;
     margin-top: 100px;
     margin-bottom: 251px;
   }
-.intro2{
-  width: 566px;
-  font-size: 32px;
-}
-  @media screen and (min-width: 1080px){
-      .section-1 {
-          background-image: url(./img/bg\ desktop-1.png);
-          background-size: contain;
-          background-position: 100% 20%;
-          background-repeat: no-repeat;
-          height: 798px;
-      
-        }
+
+  .intro2 {
+    width: 566px;
+    font-size: 32px;
   }
 
-  .icons{
+  @media screen and (min-width: 1080px) {
+    .section-1 {
+      background-image: url(./img/bg\ desktop-1.png);
+      background-size: contain;
+      background-position: 100% 20%;
+      background-repeat: no-repeat;
+      height: 798px;
+    }
+  }
+
+  .icons {
     flex-direction: column;
     margin-bottom: 100px;
     margin-top: -400px;
@@ -735,123 +652,137 @@ footer {
     margin-left: 36px;
   }
 
-  .main-part{
+  .main-part {
     display: flex;
     flex-direction: row;
     margin-left: 90px;
     margin-right: 143px;
   }
+
   .main-part > hr {
     flex-grow: 1;
     height: 1px;
     align-self: center;
     margin-top: 120px;
   }
-  .placeholder-multistories{
-    display: inline-block;
-  }
-  .recent-work{
+
+  .recent-work {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .placeholder-multistories{
-    margin-top: 0px;
-    margin-right: 0px;
+
+  .placeholder-multistories {
+    margin-top: 0;
+    margin-right: 0;
     margin-left: 90px;
     margin-bottom: 24px;
+    display: inline-block;
   }
+
   .multistories {
-    margin-top: 0px;
+    margin-top: 0;
     margin-right: 143px;
     gap: 24px;
   }
+
   .multistories > h2 {
     font-weight: 400;
     font-size: 40px;
     line-height: 52px;
   }
+
   .multistories > p {
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
   }
-  .cards{
+
+  .cards {
     display: grid;
-    grid-template-columns: repeat(3 , 1fr);
-    grid-template-rows: repeat(2 , 1fr) ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     margin-left: 143px;
     margin-right: 143px;
     margin-bottom: 130px;
     row-gap: 60px;
     column-gap: 24px;
-    
   }
-  .card1{
-    margin: 0px;
+
+  .card1 {
+    margin: 0;
   }
-  .about-me  {
+
+  .about-me {
     margin-left: 142px;
     margin-right: 732px;
   }
-  .about-me > h1{
+
+  .about-me > h1 {
     font-size: 72px;
   }
+
   .about-me > p {
     font-size: 20px;
     width: 565px;
   }
-  @media screen and (min-width: 1200px ) {
-      .section-3 {
-          background-color: #1c1a19;
-          background-image: url(./img/about-me.png);
-          background-position: 100% 20%;
-        }
+
+  @media screen and (min-width: 1200px) {
+    .section-3 {
+      background-color: #1c1a19;
+      background-image: url(./img/about-me.png);
+      background-position: 100% 20%;
+    }
   }
-  .sepration-line2{
+
+  .sepration-line2 {
     width: 1000px;
     margin-left: 160px;
     margin-right: 160px;
-
   }
-  .section-4{
+
+  .section-4 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 60px;
-    
   }
 
-  .language{
+  .language {
     margin-bottom: 130px;
   }
-  .frameworks{
+
+  .frameworks {
     margin-bottom: 80px;
   }
-  .skill{
+
+  .skill {
     margin-bottom: 80px;
   }
-  .contact{
+
+  .contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: ;
   }
-  .form-1{
+
+  .form-1 {
     margin-top: 120px;
   }
+
   .contact > h1 {
     margin-left: 135px;
     font-size: 40px;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
     line-height: 52px;
   }
-    #get-in-touch{
-      margin: 0px;
-      margin-right: 450px;
-      padding: 20px;
-      margin-bottom: 154px;
-      font-family: 'Roboto' , sans-serif;
-      font-size: 17px;
-    }
 
+  #get-in-touch {
+    margin: 0;
+    margin-right: 450px;
+    padding: 20px;
+    margin-bottom: 154px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+  }
 }
