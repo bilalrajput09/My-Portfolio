@@ -891,4 +891,10 @@ footer {
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
   }
+.icons:hover {
+          width: 950px;
+          height: 400px;
+          flex-direction: row;
+          justify-content: space-evenly;
+ }
 }
