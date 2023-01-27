@@ -716,6 +716,7 @@ footer {
     margin-top: -400px;
     gap: 20px;
     margin-left: 36px;
+    transition: width 3s, height 3s, transform 5s;
   }
 
   .main-part {
