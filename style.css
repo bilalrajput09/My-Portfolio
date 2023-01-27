@@ -716,6 +716,7 @@ footer {
     margin-top: -400px;
     gap: 20px;
     margin-left: 36px;
+    transition: width 3s, height 3s, transform 5s;
   }
 
   .main-part {
@@ -889,5 +890,12 @@ footer {
     margin-bottom: 154px;
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
+  }
+
+  .icons:hover {
+    width: 950px;
+    height: 400px;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 }
