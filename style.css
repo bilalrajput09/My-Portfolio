@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 li {
   list-style: none;
 }
@@ -726,6 +727,7 @@ footer {
   .cards-project {
     display: none;
   }
+
   .cards {
     height: 415px;
     padding-top: 48px;
