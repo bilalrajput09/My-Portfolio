@@ -33,11 +33,17 @@ I used VS code to create the project and files needed plus used Git and GitHub t
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🚀 Live Demo <a name="live-demo"></a>
+
+https://bilalrajput09.github.io/My-Portfolio/
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## 💻 Getting Started <a name="getting-started"></a>
 
 It will show my sample portfolio mobile site.
 
-### Prerequisites
+## Prerequisites
 
 In order to run this project you need to clone the repo using [git clone here](https://github.com/bilalrajput09/My-Portfolio.git) git bash and run the html file in browser using VS code.
 
