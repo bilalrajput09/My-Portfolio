@@ -113,17 +113,6 @@ header {
   margin-bottom: 104px;
 }
 
-.main-part > h2 {
-  text-align: center;
-  margin-top: 120px;
-  padding-top: 100px;
-  font-family: 'Crete Round', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 100px;
-  line-height: 52px;
-}
-
 .placeholder-multistories {
   display: flex;
   justify-content: left;
@@ -165,13 +154,14 @@ header {
 }
 
 .main-part > h2 {
-  margin: 24px 0 12px 0;
-  font-family: 'Crete Round', sans-serif;
   color: #091e42;
-  font-style: normal;
   font-weight: 400;
   font-size: 32px;
-  line-height: 44px;
+  text-align: center;
+  margin-top: 120px;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  line-height: 52px;
 }
 
 .main-part > p {
