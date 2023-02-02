@@ -113,16 +113,6 @@ header {
   margin-bottom: 104px;
 }
 
-.main-part > h1 {
-  text-align: center;
-  margin-top: 120px;
-  font-family: 'Crete Round', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 52px;
-}
-
 .placeholder-multistories {
   display: flex;
   justify-content: left;
@@ -164,13 +154,14 @@ header {
 }
 
 .main-part > h2 {
-  margin: 24px 0 12px 0;
-  font-family: 'Crete Round', sans-serif;
   color: #091e42;
-  font-style: normal;
   font-weight: 400;
   font-size: 32px;
-  line-height: 44px;
+  text-align: center;
+  margin-top: 120px;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  line-height: 52px;
 }
 
 .main-part > p {
@@ -200,6 +191,8 @@ header {
   font-size: 15px;
   line-height: 20px;
   height: 40px;
+  color: yellow;
+  background-color: black;
   margin-right: 12px;
   border: 1px solid #8993a4;
   list-style: none;
@@ -254,7 +247,7 @@ header {
   justify-content: center;
 }
 
-.cards > h1 {
+.cards > h2 {
   margin-top: 84px;
   margin-bottom: 24px;
   margin-left: 1rem;
@@ -350,7 +343,7 @@ header {
   background-position-y: 110vh;
 }
 
-.about-me > h1 {
+.about-me > h2 {
   margin-top: 120px;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -442,7 +435,7 @@ header {
   height: 18px;
 }
 
-.frameworks-1 > h1 {
+.frameworks-1 > h2 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -461,7 +454,7 @@ header {
   align-items: center;
 }
 
-.language > h1 {
+.language > h2 {
   color: white;
   font-style: normal;
   font-weight: 700;
@@ -471,7 +464,7 @@ header {
   margin-top: 0;
 }
 
-.frameworks > h1 {
+.frameworks > h2 {
   color: white;
   font-style: normal;
   font-weight: 700;
@@ -481,7 +474,7 @@ header {
   margin-top: 0;
 }
 
-.skill > h1 {
+.skill > h2 {
   color: white;
   font-style: normal;
   font-weight: 700;
@@ -548,7 +541,7 @@ header {
   background-color: white;
 }
 
-.contact h1 {
+.contact h2 {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 32px;
@@ -824,7 +817,7 @@ footer {
     margin-right: 732px;
   }
 
-  .about-me > h1 {
+  .about-me > h2 {
     font-size: 72px;
   }
 
@@ -874,7 +867,7 @@ footer {
     margin-top: 120px;
   }
 
-  .contact > h1 {
+  .contact > h2 {
     margin-left: 135px;
     font-size: 40px;
     font-family: 'Inter', sans-serif;
