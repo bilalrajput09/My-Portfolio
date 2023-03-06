@@ -1,13 +1,13 @@
-const hamburger = document.querySelector(".menu");
-const mobileMenu = document.querySelector("#mobile_menu_container");
-const close = document.querySelector(".close");
-
-hamburger.addEventListener("click", showMenu);
-close.addEventListener("click", closeMenu);
+const hamburger = document.querySelector('.menu');
+const mobileMenu = document.querySelector('#mobile_menu_container');
+const close = document.querySelector('.close');
 
 function showMenu() {
-    mobileMenu.classList.remove("hide");
+  mobileMenu.classList.remove('hide');
 }
 function closeMenu() {
-    mobileMenu.classList.add("hide");
+  mobileMenu.classList.add('hide');
 }
+
+hamburger.addEventListener('click', showMenu);
+close.addEventListener('click', closeMenu);
