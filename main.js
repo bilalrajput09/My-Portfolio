@@ -4,3 +4,10 @@ const close = document.querySelector(".close");
 
 hamburger.addEventListener("click", showMenu);
 close.addEventListener("click", closeMenu);
+
+function showMenu() {
+    mobileMenu.classList.remove("hide");
+}
+function closeMenu() {
+    mobileMenu.classList.add("hide");
+}
