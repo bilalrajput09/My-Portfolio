@@ -49,6 +49,7 @@ header {
 .menu {
   margin: 1.5rem;
   height: 1 rem;
+  cursor: pointer;
 }
 
 .main {
@@ -95,7 +96,7 @@ header {
   width: 30px;
 }
 
-.icons > li {
+.icons>li {
   margin-right: 21px;
 }
 
@@ -139,21 +140,21 @@ header {
   margin: 1.5rem;
 }
 
-.multistories > h2 {
+.multistories>h2 {
   font-family: 'Crete Round', sans-serif;
   font-weight: 400;
   font-size: 40px;
   line-height: 52px;
 }
 
-.multistories > p {
+.multistories>p {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
 }
 
-.main-part > h2 {
+.main-part>h2 {
   color: #091e42;
   font-weight: 400;
   font-size: 32px;
@@ -164,7 +165,7 @@ header {
   line-height: 52px;
 }
 
-.main-part > p {
+.main-part>p {
   margin-bottom: 12px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -183,7 +184,7 @@ header {
   flex-direction: row;
 }
 
-.languages-1 > li {
+.languages-1>li {
   padding: 10px;
   font-family: 'Inter', sans-serif;
   text-decoration: none;
@@ -247,7 +248,7 @@ header {
   justify-content: center;
 }
 
-.cards > h2 {
+.cards>h2 {
   margin-top: 84px;
   margin-bottom: 24px;
   margin-left: 1rem;
@@ -260,7 +261,7 @@ header {
   color: white;
 }
 
-.cards > p {
+.cards>p {
   margin-bottom: 12px;
   margin-left: 16px;
   margin-right: 16px;
@@ -295,7 +296,7 @@ header {
   flex-direction: row;
 }
 
-.languages-2 > li {
+.languages-2>li {
   font-family: 'Inter', sans-serif;
   text-decoration: none;
   font-weight: bolder;
@@ -343,7 +344,7 @@ header {
   background-position-y: 110vh;
 }
 
-.about-me > h2 {
+.about-me>h2 {
   margin-top: 120px;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -355,7 +356,7 @@ header {
   color: #ff6b00;
 }
 
-.about-me > p {
+.about-me>p {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   color: white;
@@ -367,11 +368,11 @@ header {
   margin-bottom: 24px;
 }
 
-.about-me > button {
+.about-me>button {
   flex-direction: row;
 }
 
-.resume > a {
+.resume>a {
   text-decoration: none;
   color: white;
   background-color: #ff6b00;
@@ -435,7 +436,7 @@ header {
   height: 18px;
 }
 
-.frameworks-1 > h2 {
+.frameworks-1>h2 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -454,7 +455,7 @@ header {
   align-items: center;
 }
 
-.language > h2 {
+.language>h2 {
   color: white;
   font-style: normal;
   font-weight: 700;
@@ -464,7 +465,7 @@ header {
   margin-top: 0;
 }
 
-.frameworks > h2 {
+.frameworks>h2 {
   color: white;
   font-style: normal;
   font-weight: 700;
@@ -474,7 +475,7 @@ header {
   margin-top: 0;
 }
 
-.skill > h2 {
+.skill>h2 {
   color: white;
   font-style: normal;
   font-weight: 700;
@@ -496,24 +497,24 @@ header {
   font-family: 'Inter', sans-serif;
 }
 
-.languages-3 > .one {
+.languages-3>.one {
   margin-top: 45px;
   margin-bottom: 32px;
 }
 
-.languages-3 > .two {
+.languages-3>.two {
   margin-bottom: 32px;
 }
 
-.languages-3 > .three {
+.languages-3>.three {
   margin-bottom: 32px;
 }
 
-.languages-3 > .four {
+.languages-3>.four {
   margin-bottom: 32px;
 }
 
-.languages-3 > .five {
+.languages-3>.five {
   margin-bottom: 32px;
 }
 
@@ -631,7 +632,7 @@ footer {
   align-items: center;
 }
 
-.icons-1 > li {
+.icons-1>li {
   margin: 21px;
 }
 
@@ -639,9 +640,49 @@ footer {
   display: none;
 }
 
+/* Mobile menu styling */
+
+.mobile_menu {
+  background-color: #3C3A39;
+  list-style: none;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+}
+
+.mobile_menu_link {
+  color: #FFF5E1;
+  text-decoration: none;
+  font-size: 32px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+.mobile_menu_items {
+  padding: 0.7em;
+  border-bottom: 2px solid #6F6C6B;
+  margin: 2em;
+}
+
+.close_container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2em;
+}
+
+.close {
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
 /* Responsive design starts from there */
 
 @media screen and (min-width: 789px) {
+
   body,
   html {
     width: 100%;
@@ -649,6 +690,10 @@ footer {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+  }
+
+  .mobile_menu {
+    display: none;
   }
 
   .menu {
@@ -719,7 +764,7 @@ footer {
     margin-right: 143px;
   }
 
-  .main-part > hr {
+  .main-part>hr {
     flex-grow: 1;
     height: 1px;
     align-self: center;
@@ -745,13 +790,13 @@ footer {
     gap: 24px;
   }
 
-  .multistories > h2 {
+  .multistories>h2 {
     font-weight: 400;
     font-size: 40px;
     line-height: 52px;
   }
 
-  .multistories > p {
+  .multistories>p {
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
@@ -817,11 +862,11 @@ footer {
     margin-right: 732px;
   }
 
-  .about-me > h2 {
+  .about-me>h2 {
     font-size: 72px;
   }
 
-  .about-me > p {
+  .about-me>p {
     font-size: 20px;
     width: 565px;
   }
@@ -867,7 +912,7 @@ footer {
     margin-top: 120px;
   }
 
-  .contact > h2 {
+  .contact>h2 {
     margin-left: 135px;
     font-size: 40px;
     font-family: 'Inter', sans-serif;
