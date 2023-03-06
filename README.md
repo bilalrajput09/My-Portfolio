@@ -25,11 +25,13 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-I used VS code to create the project and files needed plus used Git and GitHub to complete the tasks. I used templates as well as flexbox for layout plus css grid layout.
+I used VS code to create the project and files needed plus used Git and GitHub to complete the tasks. I used templates as well as flexbox for layout plus css grid layout. For mobile menu we have used javascript to give html some dynamic features.
 
 ### Key Features <a name="key-features"></a>
 
 - **[It will show my portfolio website made by using css and html.]**
+
+- **[For Mobile : And when you will click on menu button the menu will appear]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -67,6 +69,7 @@ Bilal Ahmed
 - [ ] **[ Forms ]**
 - [ ] **[Professional Layout]**
 - [ ] **[Desktop Version]**
+- [ ] **[Mobile Menu]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
