@@ -49,6 +49,7 @@ header {
 .menu {
   margin: 1.5rem;
   height: 1 rem;
+  cursor: pointer;
 }
 
 .main {
@@ -639,6 +640,45 @@ footer {
   display: none;
 }
 
+/* Mobile menu styling */
+
+.mobile_menu {
+  background-color: #3c3a39;
+  list-style: none;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+}
+
+.mobile_menu_link {
+  color: #fff5e1;
+  text-decoration: none;
+  font-size: 32px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+.mobile_menu_items {
+  padding: 0.7em;
+  border-bottom: 2px solid #6f6c6b;
+  margin: 2em;
+}
+
+.close_container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2em;
+}
+
+.close {
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
 /* Responsive design starts from there */
 
 @media screen and (min-width: 789px) {
@@ -649,6 +689,10 @@ footer {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+  }
+
+  .mobile_menu {
+    display: none;
   }
 
   .menu {

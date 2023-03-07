@@ -7,7 +7,7 @@
     <title>Bilal Ahmed Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -24,13 +24,29 @@
     />
   </head>
   <body>
+    <div id="mobile_menu_container" class="mobile_menu hide">
+      <div class="close_container">
+        <img src="./img/cross.png" alt="" class="close">
+      </div>
+      <ul class="mobile_menu_content">
+        <li class="mobile_menu_items">
+          <a href="#work" class="mobile_menu_link" onclick="closeMenu()">Portfolio</a>        
+        </li>
+        <li class="mobile_menu_items">
+          <a href="#about" class="mobile_menu_link" onclick="closeMenu()">About</a>     
+        </li>
+        <li class="mobile_menu_items" >
+          <a href="#contact-section" class="mobile_menu_link" onclick="closeMenu()">Contact</a>     
+        </li>
+      </ul>
+    </div>
     <header>
       <a href="#" class="title">Bilal Ahmed</a>
       <nav>
         <ul class="Navigation">
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#work">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact-section">Contact</a></li>
           <li><img src="./img/mail.png" alt="mail" /></li>
         </ul>
       </nav>
@@ -77,7 +93,7 @@
         </li>
       </ul>
     </section>
-    <section class="section-two">
+    <section class="section-two" id="work">
       <main class="main-container">
         <div class="main-part">
           <h2>My Recent Work</h2>
@@ -221,7 +237,7 @@
         </div>
       </section>
       <section class="section-3">
-        <div class="about-me">
+        <div class="about-me" id="about">
           <h2>About me</h2>
           <p>
             Hello I’m a software developer! I can help you build a product ,
@@ -280,7 +296,7 @@
         </ul>
       </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact-section">
       <h2>
         I'm always interested in hearing about new projects, so if you'd like to
         chat please get in touch.
@@ -360,5 +376,6 @@
         </li>
       </ul>
     </footer>
+    <script src="./main.js"></script>
   </body>
 </html>
