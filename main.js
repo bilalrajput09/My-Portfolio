@@ -12,191 +12,178 @@ function closeMenu() {
 hamburger.addEventListener('click', showMenu);
 close.addEventListener('click', closeMenu);
 
-// lets make popup daynamically,
+// lets make popup daynamically, 
 
-// object,
+// object, 
+
+const works = document.querySelector(".cards-whole");
 
 const projects = [
   {
-    fullName: 'Multi',
-    technologiesOne: 'html',
-    technologiesTwo: 'Bootstrap',
-    technologiesThree: 'Ruby on rails',
+    id: 1,
+    fullName: "Project 1",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.',
 
-    linkToLive: 'See Live',
-    linkToSource: 'See Source',
+    liveLink: "https://bilalrajput09.github.io/My-Portfolio/",
+    linkToSource: "https://github.com/bilalrajput09",
+    technologies: ["HTML", "CSS", "Ruby On Rails"]
   },
   {
-    fullName: ' Post',
-    technologiesOne: 'html',
-    technologiesTwo: 'Bootstrap',
-    technologiesThree: 'Ruby on rails',
+    id: 2,
+    fullName: "Project 2",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc..',
 
-    linkToLive: 'See Live',
-    linkToSource: 'See Source',
+    liveLink: "https://bilalrajput09.github.io/My-Portfolio/",
+    linkToSource: "https://github.com/bilalrajput09",
+    technologies: ["HTML", "CSS", "Ruby On Rails"]
   },
   {
-    fullName: ' Stories',
-    technologiesOne: 'html',
-    technologiesTwo: 'Bootstrap',
-    technologiesThree: 'Ruby on rails',
+    id: 3,
+    fullName: "Project 3",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.',
 
-    linkToLive: 'See Live',
-    linkToSource: 'See Source',
+    liveLink: "https://bilalrajput09.github.io/My-Portfolio/",
+    linkToSource: "https://github.com/bilalrajput09",
+    technologies: ["HTML", "CSS", "Ruby On Rails"]
   },
+  {
+    id: 4,
+    fullName: "Project 4",
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.',
 
+    liveLink: "https://bilalrajput09.github.io/My-Portfolio/",
+    linkToSource: "https://github.com/bilalrajput09",
+    technologies: ["HTML", "CSS", "Ruby On Rails"]
+  },
+  {
+    id: 5,
+    fullName: "Project 5",
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.',
+
+    liveLink: "https://bilalrajput09.github.io/My-Portfolio/",
+    linkToSource: "https://github.com/bilalrajput09",
+    technologies: ["HTML", "CSS", "Ruby On Rails"]
+  },
+  {
+    id: 6,
+    fullName: "Project 6",
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.',
+
+    liveLink: "https://bilalrajput09.github.io/My-Portfolio/",
+    linkToSource: "https://github.com/bilalrajput09",
+    technologies: ["HTML", "CSS", "Ruby On Rails"]
+  },
 ];
 
-const crossButton = document.createElement('span');
-const crossImg = document.createElement('img');
-crossImg.src = './img/cross.png';
-crossImg.classList.add('close_popup');
-crossButton.appendChild(crossImg);
-
-function generatePopup() {
-  const body = document.querySelector('body');
-  const popupBackgroundContainer = document.createElement('div');
-  popupBackgroundContainer.classList.add('popup_background_container');
-  const popupHeadingContainer = document.createElement('div');
-  popupHeadingContainer.classList.add('popup_heading_container');
-  const mainPopupHeading = document.createElement('h2');
-  mainPopupHeading.classList.add('main_popup_heading');
-
+function createProjectCards(projects) {
   projects.forEach((project) => {
-    const mainContainer = document.createElement('section');
-    mainContainer.classList.add('main_popup_container');
-
-    // popup heading starts here !!!
-    const fullName = document.createTextNode(project.fullName);
-    mainPopupHeading.appendChild(fullName);
-
-    popupHeadingContainer.appendChild(mainPopupHeading);
-    mainContainer.appendChild(popupHeadingContainer);
-
-    // popup Technology part starts here !!!
-    const popupLanguageBox = document.createElement('ul');
-    popupLanguageBox.classList.add('popup_language_box');
-
-    const languageBoxOne = document.createElement('li');
-    languageBoxOne.classList.add('language_box_item');
-
-    const technologiesOne = document.createTextNode(project.technologiesOne);
-    languageBoxOne.appendChild(technologiesOne);
-
-    const languageBoxTwo = document.createElement('li');
-    languageBoxTwo.classList.add('language_box_item');
-
-    const technologiesTwo = document.createTextNode(project.technologiesTwo);
-    languageBoxTwo.appendChild(technologiesTwo);
-
-    const languageBoxThree = document.createElement('li');
-    languageBoxThree.classList.add('language_box_item');
-
-    const technologiesThree = document.createTextNode(project.technologiesThree);
-    languageBoxThree.appendChild(technologiesThree);
-
-    popupLanguageBox.appendChild(languageBoxOne);
-    popupLanguageBox.appendChild(languageBoxTwo);
-    popupLanguageBox.appendChild(languageBoxThree);
-
-    mainContainer.appendChild(popupLanguageBox);
-
-    // popup img and pragraph starts here part starts here !!!
-
-    const popupGridContainer = document.createElement('div');
-    popupGridContainer.classList.add('popup_grid_container');
-
-    const popupImg = document.createElement('img');
-    popupImg.src = './img/popup-img-desktop.png';
-    popupImg.classList.add('popup_img');
-    popupGridContainer.appendChild(popupImg);
-
-    const popupPara = document.createElement('p');
-    popupPara.classList.add('popup_para');
-
-    const popupParaText = document.createTextNode(project.description);
-    popupPara.appendChild(popupParaText);
-
-    popupGridContainer.appendChild(popupPara);
-
-    // popup Buttons part starts here !!!
-
-    const popupButtonMainContainer = document.createElement('div');
-    popupButtonMainContainer.classList.add('popup_button_main_container');
-
-    const popupButtonContainerOne = document.createElement('div');
-    popupButtonContainerOne.classList.add('popup_buttons_container');
-    popupGridContainer.appendChild(popupButtonContainerOne);
-
-    const popupButtonOne = document.createElement('button');
-    popupButtonOne.classList.add('popup_buttons');
-
-    popupButtonOne.addEventListener('click', () => {
-      window.open('https://bilalrajput09.github.io/My-Portfolio/', '_blank');
-    });
-
-    const linkToLive = document.createTextNode(project.linkToLive);
-
-    popupButtonOne.appendChild(linkToLive);
-
-    const popupIconOne = document.createElement('span');
-    popupIconOne.classList.add('popup_icons');
-
-    const popupIconsImgOne = document.createElement('img');
-    popupIconsImgOne.src = './img/see-live.png';
-
-    popupIconOne.appendChild(popupIconsImgOne);
-
-    popupButtonContainerOne.appendChild(popupButtonOne);
-    popupButtonContainerOne.appendChild(popupIconOne);
-
-    const popupButtonContainerTwo = document.createElement('div');
-    popupButtonContainerTwo.classList.add('popup_buttons_container');
-    popupGridContainer.appendChild(popupButtonContainerTwo);
-
-    const popupButtonTwo = document.createElement('button');
-    popupButtonTwo.classList.add('popup_buttons');
-
-    popupButtonTwo.addEventListener('click', () => {
-      window.open('https://github.com/bilalrajput09', '_blank');
-    });
-
-    const linkToSource = document.createTextNode(project.linkToSource);
-
-    popupButtonTwo.appendChild(linkToSource);
-
-    const popupIconTwo = document.createElement('span');
-    popupIconTwo.classList.add('popup_icons');
-
-    const popupIconsImgTwo = document.createElement('img');
-    popupIconsImgTwo.src = './img/github-white-popup.png';
-
-    popupIconTwo.appendChild(popupIconsImgTwo);
-
-    popupButtonContainerTwo.appendChild(popupButtonTwo);
-    popupButtonContainerTwo.appendChild(popupIconTwo);
-
-    popupButtonMainContainer.appendChild(popupButtonContainerOne);
-    popupButtonMainContainer.appendChild(popupButtonContainerTwo);
-
-    popupGridContainer.appendChild(popupButtonMainContainer);
-
-    mainContainer.appendChild(popupGridContainer);
-
-    popupBackgroundContainer.appendChild(mainContainer);
+    const projectCard = document.createElement("div");
+    projectCard.classList.add("cards");
+    projectCard.innerHTML = `
+              <div class="cards">
+            <h2 class="data">
+              ${project.fullName}
+            </h2>
+            <p class="para">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard.
+              And this si what has not been done daily.
+              has been the industry's standard.
+              And this si what has not been done daily.
+            </p>
+            <ul class="languages-2">
+              ${project.technologies.map((tech) => `<li class "card-tag" >${tech}</li>`).join('')}
+            </ul>
+            <a href="#" class="cards-project" data-target = "modal-${project.id}" onclick = "showModal(this)">See Project</a>
+          </div>
+          `;
+    works.appendChild(projectCard)
   });
-  popupHeadingContainer.appendChild(crossButton);
-  body.appendChild(popupBackgroundContainer);
-  crossButton.addEventListener('click', () => {
-    body.removeChild(popupBackgroundContainer);
+};
+
+function createModals(projects) {
+  projects.forEach((project) => {
+    const modal = document.createElement("div");
+    modal.classList.add("main_popup_container");
+    modal.classList.add("modal-hidden");
+    modal.id = `modal-${project.id}`;
+    modal.innerHTML = `
+    <div class="popup_heading_container">
+
+    <h2 class="main_popup_heading">${project.fullName}</h2>
+
+    <div>
+    
+    <img class="close_popup"
+    onclick = "closeModal('modal-${project.id}')"
+    src="./img/cross.png" ">
+    
+    </div>
+
+    </div>
+
+    <ul class="popup_language_box">
+    
+    ${project.technologies.map((tech) => `<li class = "language_box_item" >${tech}</li>`).join('')}
+
+    </ul>
+    <div class="popup_grid_container">
+    
+    <img src="./img/popup-img-desktop.png" class="popup_img">
+
+
+      <p class="popup_para">${project.description}</p>
+
+
+      <div class="popup_button_main_container">
+
+
+        <div class="popup_buttons_container">
+        
+        <a class="popup_buttons" href = "${project.liveLink}">See Live</a>
+        
+        <span
+            class="popup_icons">
+
+            <img src="./img/see-live.png">
+            
+        </span>
+
+        </div>
+        <div class="popup_buttons_container">
+        
+        <a class="popup_buttons" href = "${project.linkToSource}">See Source</a>
+
+        <span class="popup_icons">
+
+        <img src="./img/github-white-popup.png">
+
+        </span>
+        </div>
+      </div>
+    </div>
+    `;
+    document.body.appendChild(modal);
   });
 }
 
-const project1 = document.querySelector('.project1');
-project1.addEventListener('click', generatePopup);
+function showModal(btn) {
+  const modal = document.getElementById(btn.dataset.target);
+  modal.classList.remove("modal-hidden");
+  backdrop.classList.remove("backdrop-hidden");
+};
+
+function closeModal(modalId) {
+  const modal = document.getElementById(modalId);
+  modal.classList.add("modal-hidden");
+  backdrop.classList.add("backdrop-hidden");
+}
+
+createModals(projects);
+createProjectCards(projects);
