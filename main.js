@@ -1,6 +1,7 @@
 const hamburger = document.querySelector('.menu');
 const mobileMenu = document.querySelector('#mobile_menu_container');
 const close = document.querySelector('.close');
+const backdrop = document.querySelector('#backdrop');
 
 function showMenu() {
   mobileMenu.classList.remove('hide');
@@ -12,79 +13,79 @@ function closeMenu() {
 hamburger.addEventListener('click', showMenu);
 close.addEventListener('click', closeMenu);
 
-// lets make popup daynamically, 
+// lets make popup daynamically,
 
-// object, 
+// object,
 
-const works = document.querySelector(".cards-whole");
+const works = document.querySelector('.cards-whole');
 
 const projects = [
   {
     id: 1,
-    fullName: "Project 1",
+    fullName: 'Project 1',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.',
 
-    liveLink: "https://bilalrajput09.github.io/My-Portfolio/",
-    linkToSource: "https://github.com/bilalrajput09",
-    technologies: ["HTML", "CSS", "Ruby On Rails"]
+    liveLink: 'https://bilalrajput09.github.io/My-Portfolio/',
+    linkToSource: 'https://github.com/bilalrajput09',
+    technologies: ['HTML', 'CSS', 'Ruby On Rails'],
   },
   {
     id: 2,
-    fullName: "Project 2",
+    fullName: 'Project 2',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc..',
 
-    liveLink: "https://bilalrajput09.github.io/My-Portfolio/",
-    linkToSource: "https://github.com/bilalrajput09",
-    technologies: ["HTML", "CSS", "Ruby On Rails"]
+    liveLink: 'https://bilalrajput09.github.io/My-Portfolio/',
+    linkToSource: 'https://github.com/bilalrajput09',
+    technologies: ['HTML', 'CSS', 'Ruby On Rails'],
   },
   {
     id: 3,
-    fullName: "Project 3",
+    fullName: 'Project 3',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.',
 
-    liveLink: "https://bilalrajput09.github.io/My-Portfolio/",
-    linkToSource: "https://github.com/bilalrajput09",
-    technologies: ["HTML", "CSS", "Ruby On Rails"]
+    liveLink: 'https://bilalrajput09.github.io/My-Portfolio/',
+    linkToSource: 'https://github.com/bilalrajput09',
+    technologies: ['HTML', 'CSS', 'Ruby On Rails'],
   },
   {
     id: 4,
-    fullName: "Project 4",
+    fullName: 'Project 4',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.',
 
-    liveLink: "https://bilalrajput09.github.io/My-Portfolio/",
-    linkToSource: "https://github.com/bilalrajput09",
-    technologies: ["HTML", "CSS", "Ruby On Rails"]
+    liveLink: 'https://bilalrajput09.github.io/My-Portfolio/',
+    linkToSource: 'https://github.com/bilalrajput09',
+    technologies: ['HTML', 'CSS', 'Ruby On Rails'],
   },
   {
     id: 5,
-    fullName: "Project 5",
+    fullName: 'Project 5',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.',
 
-    liveLink: "https://bilalrajput09.github.io/My-Portfolio/",
-    linkToSource: "https://github.com/bilalrajput09",
-    technologies: ["HTML", "CSS", "Ruby On Rails"]
+    liveLink: 'https://bilalrajput09.github.io/My-Portfolio/',
+    linkToSource: 'https://github.com/bilalrajput09',
+    technologies: ['HTML', 'CSS', 'Ruby On Rails'],
   },
   {
     id: 6,
-    fullName: "Project 6",
+    fullName: 'Project 6',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.',
 
-    liveLink: "https://bilalrajput09.github.io/My-Portfolio/",
-    linkToSource: "https://github.com/bilalrajput09",
-    technologies: ["HTML", "CSS", "Ruby On Rails"]
+    liveLink: 'https://bilalrajput09.github.io/My-Portfolio/',
+    linkToSource: 'https://github.com/bilalrajput09',
+    technologies: ['HTML', 'CSS', 'Ruby On Rails'],
   },
 ];
 
 function createProjectCards(projects) {
   projects.forEach((project) => {
-    const projectCard = document.createElement("div");
-    projectCard.classList.add("cards");
+    const projectCard = document.createElement('div');
+    projectCard.classList.add('cards');
     projectCard.innerHTML = `
               <div class="cards">
             <h2 class="data">
@@ -103,15 +104,15 @@ function createProjectCards(projects) {
             <a href="#" class="cards-project" data-target = "modal-${project.id}" onclick = "showModal(this)">See Project</a>
           </div>
           `;
-    works.appendChild(projectCard)
+    works.appendChild(projectCard);
   });
-};
+}
 
 function createModals(projects) {
   projects.forEach((project) => {
-    const modal = document.createElement("div");
-    modal.classList.add("main_popup_container");
-    modal.classList.add("modal-hidden");
+    const modal = document.createElement('div');
+    modal.classList.add('main_popup_container');
+    modal.classList.add('modal-hidden');
     modal.id = `modal-${project.id}`;
     modal.innerHTML = `
     <div class="popup_heading_container">
@@ -173,16 +174,18 @@ function createModals(projects) {
   });
 }
 
+// eslint-disable-next-line no-unused-vars
 function showModal(btn) {
   const modal = document.getElementById(btn.dataset.target);
-  modal.classList.remove("modal-hidden");
-  backdrop.classList.remove("backdrop-hidden");
-};
+  modal.classList.remove('modal-hidden');
+  backdrop.classList.remove('backdrop-hidden');
+}
 
+// eslint-disable-next-line no-unused-vars
 function closeModal(modalId) {
   const modal = document.getElementById(modalId);
-  modal.classList.add("modal-hidden");
-  backdrop.classList.add("backdrop-hidden");
+  modal.classList.add('modal-hidden');
+  backdrop.classList.add('backdrop-hidden');
 }
 
 createModals(projects);
