@@ -174,8 +174,6 @@ header {
   line-height: 24px;
   color: #091e42;
   margin-right: 1.5rem;
-
-  /* margin-bottom: 12px; */
 }
 
 .languages-1 {
@@ -240,8 +238,6 @@ header {
   background-image: url(./img/project-img.png);
   background-repeat: no-repeat;
   background-size: cover;
-
-  /* height: 395px; */
   width: 327px;
   display: flex;
   flex-direction: column;
@@ -275,9 +271,6 @@ header {
 }
 
 .cards-project {
-  /* margin-top: 28px; */
-
-  /* height: 48px; */
   width: 100%;
   text-align: center;
   padding: 12px;
@@ -307,8 +300,6 @@ header {
   font-size: 15px;
   line-height: 20px;
   height: 40px;
-
-  /* margin-right: 5px; */
   border: none;
   color: white;
   background: rgba(137, 139, 137, 0.4);
@@ -320,8 +311,6 @@ header {
 
 .css2 {
   width: 49px;
-
-  /* margin-bottom: 26px; */
 }
 
 .html2 {
@@ -768,7 +757,7 @@ footer {
   background-color: #ff6b00;
   display: flex;
   align-items: center;
-  padding: 0.5em;
+  padding: 8px 5px;
 }
 
 .popup_buttons {
@@ -806,8 +795,6 @@ footer {
     overflow: hidden;
     top: 55px;
     z-index: 110;
-
-    /* margin: 2rem 90px; */
   }
 
   .popup_heading_container {
@@ -840,6 +827,13 @@ footer {
   }
 }
 
+.close_first_popup {
+  position: fixed;
+  top: 60px;
+  left: 300px;
+  z-index: 120;
+}
+
 /* Responsive design starts from there */
 
 @media screen and (min-width: 789px) {
@@ -852,6 +846,15 @@ footer {
     overflow-x: hidden;
   }
 
+  /* Popup settings */
+  .close_first_popup {
+    position: fixed;
+    top: 120px;
+    left: 1200px;
+    z-index: 120;
+  }
+
+  /* setting ends */
   .mobile_menu {
     display: none;
   }
@@ -977,8 +980,6 @@ footer {
 
   .cards {
     height: 410px;
-
-    /* padding-top: 48px; */
     cursor: pointer;
     width: 100%;
     background-image: url(./img/project-img-resized.png);
