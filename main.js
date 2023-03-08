@@ -16,7 +16,43 @@ close.addEventListener('click', closeMenu);
 
 // object, 
 
+const projects = [
+  {
+    fullName: "Multi",
+    technologies_1: "html",
+    technologies_2: "Bootstrap",
+    technologies_3: "Ruby on rails",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
 
+    linkToLive: "See Live",
+    linkToSource: "See Source",
+  },
+  {
+    fullName: " Post",
+    technologies_1: "html",
+    technologies_2: "Bootstrap",
+    technologies_3: "Ruby on rails",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+
+    linkToLive: "See Live",
+    linkToSource: "See Source",
+  },
+  {
+    fullName: " Stories",
+    technologies_1: "html",
+    technologies_2: "Bootstrap",
+    technologies_3: "Ruby on rails",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+
+    linkToLive: "See Live",
+    linkToSource: "See Source",
+  },
+
+
+];
 
 var body = document.querySelector("body");
 var crossButton = document.createElement("span");
