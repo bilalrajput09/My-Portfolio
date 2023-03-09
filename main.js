@@ -339,3 +339,28 @@ formOne.addEventListener('submit', (event) => {
 });
 
 // form validation ends here !
+
+// localstorage section starts here ! 
+// Add code here!
+
+var createLocalstorageObject = () => {
+
+  var info = {
+    fullName: fullName.value,
+    email: email.value,
+    message: textarea.value,
+  }
+  localStorage.setItem("info", JSON.stringify(info));
+}
+
+//add event listner to form,
+
+formOne.addEventListener("input", createLocalstorageObject);
+
+// convert string to object again,
+
+var infoObject = JSON.parse(localStorage.getItem("info"));
+
+fullName.value = infoObject.fullName;
+email.value = infoObject.email;
+textarea.value = infoObject.message;
