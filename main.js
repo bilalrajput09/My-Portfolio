@@ -305,3 +305,37 @@ createModals(projects);
 createProjectCards(projects);
 getclosebtns();
 getbtns();
+
+// form validation starts here
+
+const formOne = document.querySelector('.form-1');
+const emailRegex = /^[a-z0-9%_]+@[a-z0-9%_.]+\.[a-z]{2,}$/g;
+
+formOne.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const fullName = document.querySelector('#name').value;
+  const email = document.querySelector('#email').value;
+  const textarea = document.querySelector('#textarea-1').value;
+
+  const error = document.querySelector('.error');
+  if (fullName.length === '') {
+    error.innerHTML = 'Please enter full name.';
+    error.style.color = 'red';
+    return false;
+  } if (!emailRegex.test(email)) {
+    error.innerHTML = 'Please enter email in lowercase.';
+    error.style.color = 'red';
+    return false;
+  } if (textarea.length === '') {
+    error.innerHTML = 'Please enter some text.';
+    error.style.color = 'red';
+    return false;
+  }
+  error.innerHTML = '<i class="far fa-check-circle"></i>';
+  error.style.color = 'green';
+  formOne.submit();
+
+  return true;
+});
+
+// form validation ends here !
