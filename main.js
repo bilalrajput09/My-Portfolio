@@ -108,14 +108,6 @@ function createProjectCards(projects) {
   });
 }
 
-function getbtns() {
-  btns = document.getElementsByClassName('open-popup-btn');
-  console.log(btns);
-  Array.from(btns).forEach((btn, index) => {
-    btn.addEventListener('click', showModal(`modal-${index + 1}`));
-  })
-}
-
 const firstProjects = [
   {
     name: 'Multi Post Stories',
@@ -233,7 +225,7 @@ function createModals(projects) {
 
     <div>
     
-    <img class="close_popup"
+    <img class="close_popup close_popup_x"
     onclick = "closeModal('modal-${project.id}')"
     src="./img/cross.png" ">
     
@@ -286,21 +278,30 @@ function createModals(projects) {
   });
 }
 
-// eslint-disable-next-line no-unused-vars
-function showModal(btn) {
-  const modal = document.getElementById(btn.dataset.target);
-  modal.classList.remove('modal-hidden');
-  backdrop.classList.remove('backdrop-hidden');
+function getbtns() {
+  btns = document.getElementsByClassName('open-popup-btn');
+  Array.from(btns).forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+      const modal = document.getElementById(`modal-${index + 1}`);
+      modal.classList.remove('modal-hidden');
+      backdrop.classList.remove('backdrop-hidden');
+    });
+  })
 }
 
-// eslint-disable-next-line no-unused-vars
-function closeModal(modalId) {
-  const modal = document.getElementById(modalId);
-  modal.classList.add('modal-hidden');
-  backdrop.classList.add('backdrop-hidden');
+function getclosebtns() {
+  const closebtns = document.getElementsByClassName('close_popup_x');
+  Array.from(closebtns).forEach((closebtn, index) => {
+    closebtn.addEventListener('click', () => {
+        const modal = document.getElementById(`modal-${index + 1}`);
+        modal.classList.add('modal-hidden');
+        backdrop.classList.add('backdrop-hidden');
+    });
+  });
 }
 
 createFirstProject();
 createModals(projects);
 createProjectCards(projects);
+getclosebtns();
 getbtns();
