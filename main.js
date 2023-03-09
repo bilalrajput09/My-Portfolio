@@ -308,7 +308,8 @@ getbtns();
 
 // form validation starts here 
 
-// add changes here.
+var formOne = document.querySelector(".form-1");
+var emailRegex = /^[a-z0-9%_]+@[a-z0-9%_.]+\.[a-z]{2,}$/g;
 
 formOne.addEventListener("submit", function validateForm(event) {
   event.preventDefault();
