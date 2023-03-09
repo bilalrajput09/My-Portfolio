@@ -306,38 +306,36 @@ createProjectCards(projects);
 getclosebtns();
 getbtns();
 
-// form validation starts here 
+// form validation starts here
 
-var formOne = document.querySelector(".form-1");
-var emailRegex = /^[a-z0-9%_]+@[a-z0-9%_.]+\.[a-z]{2,}$/g;
+const formOne = document.querySelector('.form-1');
+const emailRegex = /^[a-z0-9%_]+@[a-z0-9%_.]+\.[a-z]{2,}$/g;
 
-formOne.addEventListener("submit", function validateForm(event) {
+formOne.addEventListener('submit', (event) => {
   event.preventDefault();
-  var fullName = document.querySelector("#name").value;
-  var email = document.querySelector("#email").value;
-  var textarea = document.querySelector("#textarea-1").value;
+  const fullName = document.querySelector('#name').value;
+  const email = document.querySelector('#email').value;
+  const textarea = document.querySelector('#textarea-1').value;
 
-  var error = document.querySelector(".error");
-  if (fullName.length == "") {
-    error.innerHTML = "Please enter full name.";
-    error.style.color = "red";
+  const error = document.querySelector('.error');
+  if (fullName.length === '') {
+    error.innerHTML = 'Please enter full name.';
+    error.style.color = 'red';
+    return false;
+  } if (!emailRegex.test(email)) {
+    error.innerHTML = 'Please enter email in lowercase.';
+    error.style.color = 'red';
+    return false;
+  } if (textarea.length === '') {
+    error.innerHTML = 'Please enter some text.';
+    error.style.color = 'red';
     return false;
   }
-  else if (!emailRegex.test(email)) {
-    error.innerHTML = "Please enter email in lowercase.";
-    error.style.color = "red";
-    return false;
-  }
-  else if (textarea.length == "") {
-    error.innerHTML = "Please enter some text."
-    error.style.color = "red";
-  }
-  else {
-    error.innerHTML = `<i class="far fa-check-circle"></i>`;
-    error.style.color = "green";
-    formOne.submit();
-  }
+  error.innerHTML = '<i class="far fa-check-circle"></i>';
+  error.style.color = 'green';
+  formOne.submit();
 
-})
+  return true;
+});
 
-// form validation ends here ! 
+// form validation ends here !
