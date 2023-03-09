@@ -279,23 +279,23 @@ function createModals(projects) {
 }
 
 function getbtns() {
-  btns = document.getElementsByClassName('open-popup-btn');
+  const btns = document.getElementsByClassName('open-popup-btn');
   Array.from(btns).forEach((btn, index) => {
     btn.addEventListener('click', () => {
       const modal = document.getElementById(`modal-${index + 1}`);
       modal.classList.remove('modal-hidden');
       backdrop.classList.remove('backdrop-hidden');
     });
-  })
+  });
 }
 
 function getclosebtns() {
   const closebtns = document.getElementsByClassName('close_popup_x');
   Array.from(closebtns).forEach((closebtn, index) => {
     closebtn.addEventListener('click', () => {
-        const modal = document.getElementById(`modal-${index + 1}`);
-        modal.classList.add('modal-hidden');
-        backdrop.classList.add('backdrop-hidden');
+      const modal = document.getElementById(`modal-${index + 1}`);
+      modal.classList.add('modal-hidden');
+      backdrop.classList.add('backdrop-hidden');
     });
   });
 }
