@@ -340,28 +340,27 @@ formOne.addEventListener('submit', (event) => {
 
 // form validation ends here !
 
-// localstorage section starts here ! 
-var fullName = document.querySelector("#name");
-var email = document.querySelector("#email");
-var textarea = document.querySelector("#textarea-1");
+// localstorage section starts here !
+const fullName = document.querySelector('#name');
+const email = document.querySelector('#email');
+const textarea = document.querySelector('#textarea-1');
 
-var createLocalstorageObject = () => {
-
-  var info = {
+const createLocalstorageObject = () => {
+  const info = {
     fullName: fullName.value,
     email: email.value,
     message: textarea.value,
-  }
-  localStorage.setItem("info", JSON.stringify(info));
-}
+  };
+  localStorage.setItem('info', JSON.stringify(info));
+};
 
-//add event listner to form,
+// add event listner to form,
 
-formOne.addEventListener("input", createLocalstorageObject);
+formOne.addEventListener('input', createLocalstorageObject);
 
 // convert string to object again,
 
-var infoObject = JSON.parse(localStorage.getItem("info"));
+const infoObject = JSON.parse(localStorage.getItem('info'));
 
 fullName.value = infoObject.fullName;
 email.value = infoObject.email;
