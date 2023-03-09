@@ -341,7 +341,9 @@ formOne.addEventListener('submit', (event) => {
 // form validation ends here !
 
 // localstorage section starts here ! 
-// Add code here!
+var fullName = document.querySelector("#name");
+var email = document.querySelector("#email");
+var textarea = document.querySelector("#textarea-1");
 
 var createLocalstorageObject = () => {
 
