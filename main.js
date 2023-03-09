@@ -305,3 +305,38 @@ createModals(projects);
 createProjectCards(projects);
 getclosebtns();
 getbtns();
+
+// form validation starts here 
+
+// add changes here.
+
+formOne.addEventListener("submit", function validateForm(event) {
+  event.preventDefault();
+  var fullName = document.querySelector("#name").value;
+  var email = document.querySelector("#email").value;
+  var textarea = document.querySelector("#textarea-1").value;
+
+  var error = document.querySelector(".error");
+  if (fullName.length == "") {
+    error.innerHTML = "Please enter full name.";
+    error.style.color = "red";
+    return false;
+  }
+  else if (!emailRegex.test(email)) {
+    error.innerHTML = "Please enter email in lowercase.";
+    error.style.color = "red";
+    return false;
+  }
+  else if (textarea.length == "") {
+    error.innerHTML = "Please enter some text."
+    error.style.color = "red";
+  }
+  else {
+    error.innerHTML = `<i class="far fa-check-circle"></i>`;
+    error.style.color = "green";
+    formOne.submit();
+  }
+
+})
+
+// form validation ends here ! 
