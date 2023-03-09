@@ -101,11 +101,19 @@ function createProjectCards(projects) {
             <ul class="languages-2">
               ${project.technologies.map((tech) => `<li class "card-tag" >${tech}</li>`).join('')}
             </ul>
-            <a href="#" class="cards-project" data-target = "modal-${project.id}" onclick = "showModal(this)">See Project</a>
+            <a href="#" class="cards-project open-popup-btn" data-target = "modal-${project.id}" id="card-${project.id}">See Project</a>
           </div>
           `;
     works.appendChild(projectCard);
   });
+}
+
+function getbtns() {
+  btns = document.getElementsByClassName('open-popup-btn');
+  console.log(btns);
+  Array.from(btns).forEach((btn, index) => {
+    btn.addEventListener('click', showModal(`modal-${index + 1}`));
+  })
 }
 
 const firstProjects = [
@@ -157,7 +165,7 @@ firstProjectBtn.addEventListener('click', () => {
 
     <div>
     
-    <img class="close_first" src="./img/cross.png" onclick = "closePopupWindow()">
+    <img class="close_first" src="./img/cross.png" id="popup-closeImg">
     
     </div>
 
@@ -204,14 +212,13 @@ firstProjectBtn.addEventListener('click', () => {
     </div>
     </div>`;
   document.body.appendChild(firstProjectContainer);
+  const popupCloseImg = document.getElementById('popup-closeImg');
+  popupCloseImg.addEventListener('click', () => {
+    backdrop.classList.add('backdrop-hidden');
+    firstProjectContainer.style.display = 'none';
+  });
   backdrop.classList.remove('backdrop-hidden');
 });
-
-// eslint-disable-next-line no-unused-vars
-function closePopupWindow() {
-  backdrop.classList.add('backdrop-hidden');
-  firstProjectContainer.style.display = 'none';
-}
 
 function createModals(projects) {
   projects.forEach((project) => {
@@ -296,3 +303,4 @@ function closeModal(modalId) {
 createFirstProject();
 createModals(projects);
 createProjectCards(projects);
+getbtns();

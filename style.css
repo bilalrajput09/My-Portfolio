@@ -96,7 +96,7 @@ header {
   width: 30px;
 }
 
-.icons > li {
+.icons>li {
   margin-right: 21px;
 }
 
@@ -140,21 +140,21 @@ header {
   margin: 1.5rem;
 }
 
-.multistories > h2 {
+.multistories>h2 {
   font-family: 'Crete Round', sans-serif;
   font-weight: 400;
   font-size: 40px;
   line-height: 52px;
 }
 
-.multistories > p {
+.multistories>p {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
 }
 
-.main-part > h2 {
+.main-part>h2 {
   color: #091e42;
   font-weight: 400;
   font-size: 32px;
@@ -165,7 +165,7 @@ header {
   line-height: 52px;
 }
 
-.main-part > p {
+.main-part>p {
   margin-bottom: 12px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -182,7 +182,7 @@ header {
   flex-direction: row;
 }
 
-.languages-1 > li {
+.languages-1>li {
   padding: 10px;
   font-family: 'Inter', sans-serif;
   text-decoration: none;
@@ -245,7 +245,7 @@ header {
   justify-content: center;
 }
 
-.cards > h2 {
+.cards>h2 {
   margin-top: 84px;
   margin-bottom: 10px;
   margin-left: 1rem;
@@ -258,7 +258,7 @@ header {
   color: white;
 }
 
-.cards > p {
+.cards>p {
   margin-bottom: 12px;
   margin-left: 16px;
   margin-right: 16px;
@@ -293,7 +293,7 @@ header {
   gap: 10px;
 }
 
-.languages-2 > li {
+.languages-2>li {
   font-family: 'Inter', sans-serif;
   text-decoration: none;
   font-weight: bolder;
@@ -329,7 +329,7 @@ header {
   background-position-y: 110vh;
 }
 
-.about-me > h2 {
+.about-me>h2 {
   margin-top: 120px;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -341,7 +341,7 @@ header {
   color: #ff6b00;
 }
 
-.about-me > p {
+.about-me>p {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   color: white;
@@ -353,11 +353,11 @@ header {
   margin-bottom: 24px;
 }
 
-.about-me > button {
+.about-me>button {
   flex-direction: row;
 }
 
-.resume > a {
+.resume>a {
   text-decoration: none;
   color: white;
   background-color: #ff6b00;
@@ -421,7 +421,7 @@ header {
   height: 18px;
 }
 
-.frameworks-1 > h2 {
+.frameworks-1>h2 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -440,7 +440,7 @@ header {
   align-items: center;
 }
 
-.language > h2 {
+.language>h2 {
   color: white;
   font-style: normal;
   font-weight: 700;
@@ -450,7 +450,7 @@ header {
   margin-top: 0;
 }
 
-.frameworks > h2 {
+.frameworks>h2 {
   color: white;
   font-style: normal;
   font-weight: 700;
@@ -460,7 +460,7 @@ header {
   margin-top: 0;
 }
 
-.skill > h2 {
+.skill>h2 {
   color: white;
   font-style: normal;
   font-weight: 700;
@@ -482,24 +482,24 @@ header {
   font-family: 'Inter', sans-serif;
 }
 
-.languages-3 > .one {
+.languages-3>.one {
   margin-top: 45px;
   margin-bottom: 32px;
 }
 
-.languages-3 > .two {
+.languages-3>.two {
   margin-bottom: 32px;
 }
 
-.languages-3 > .three {
+.languages-3>.three {
   margin-bottom: 32px;
 }
 
-.languages-3 > .four {
+.languages-3>.four {
   margin-bottom: 32px;
 }
 
-.languages-3 > .five {
+.languages-3>.five {
   margin-bottom: 32px;
 }
 
@@ -617,7 +617,7 @@ footer {
   align-items: center;
 }
 
-.icons-1 > li {
+.icons-1>li {
   margin: 21px;
 }
 
@@ -670,7 +670,7 @@ footer {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  /* z-index: 100; */
   background-color: #10161ba1;
   width: 100%;
   height: 100vh;
@@ -701,7 +701,9 @@ footer {
   padding: 1em;
   left: 50%;
   transform: translate(-50%, 0);
-  z-index: 110;
+  z-index: 100;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .popup_heading_container {
@@ -714,7 +716,7 @@ footer {
   align-items: center;
 }
 
-.popup_heading_container > span {
+.popup_heading_container>span {
   font-size: 2rem;
   padding-right: 0.5em;
 }
@@ -792,7 +794,7 @@ footer {
     background-color: white;
     height: 550px;
     width: 1156px;
-    overflow: hidden;
+    overflow: scroll;
     top: 55px;
     z-index: 110;
   }
@@ -837,6 +839,7 @@ footer {
 /* Responsive design starts from there */
 
 @media screen and (min-width: 789px) {
+
   body,
   html {
     width: 100%;
@@ -927,7 +930,7 @@ footer {
     margin-right: 143px;
   }
 
-  .main-part > hr {
+  .main-part>hr {
     flex-grow: 1;
     height: 1px;
     align-self: center;
@@ -953,13 +956,13 @@ footer {
     gap: 24px;
   }
 
-  .multistories > h2 {
+  .multistories>h2 {
     font-weight: 400;
     font-size: 40px;
     line-height: 52px;
   }
 
-  .multistories > p {
+  .multistories>p {
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
@@ -1028,11 +1031,11 @@ footer {
     margin-right: 732px;
   }
 
-  .about-me > h2 {
+  .about-me>h2 {
     font-size: 72px;
   }
 
-  .about-me > p {
+  .about-me>p {
     font-size: 20px;
     width: 565px;
   }
@@ -1078,7 +1081,7 @@ footer {
     margin-top: 120px;
   }
 
-  .contact > h2 {
+  .contact>h2 {
     margin-left: 135px;
     font-size: 40px;
     font-family: 'Inter', sans-serif;
