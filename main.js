@@ -1,107 +1,111 @@
-const hamburger = document.querySelector('.menu');
-const mobileMenu = document.querySelector('#mobile_menu_container');
-const close = document.querySelector('.close');
-const backdrop = document.querySelector('#backdrop');
+const hamburger = document.querySelector(".menu");
+const mobileMenu = document.querySelector("#mobile_menu_container");
+const close = document.querySelector(".close");
+const backdrop = document.querySelector("#backdrop");
 
 function showMenu() {
-  mobileMenu.classList.remove('hide');
+  mobileMenu.classList.remove("hide");
 }
 function closeMenu() {
-  mobileMenu.classList.add('hide');
+  mobileMenu.classList.add("hide");
 }
 
-hamburger.addEventListener('click', showMenu);
-close.addEventListener('click', closeMenu);
+hamburger.addEventListener("click", showMenu);
+close.addEventListener("click", closeMenu);
 
 // lets make popup daynamically,
 
 // object,
 
-const works = document.querySelector('.cards-whole');
+const works = document.querySelector(".cards-whole");
 
 const projects = [
   {
     id: 1,
-    fullName: 'Project 1',
+    class: "project_one",
+    fullName: "First Capstone Project",
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.',
+      "Nescafe concert is a musical event sponsored by Nescafe, a popular coffee brand. The concert features a lineup of talented musicians and performers who entertain the audience with their music and artistry. This repository has been established to showcase the HTML/CSS and fundamental concepts of JavaScript capstone project",
 
-    liveLink: 'https://bilalrajput09.github.io/My-Portfolio/',
-    linkToSource: 'https://github.com/bilalrajput09',
-    technologies: ['HTML', 'CSS', 'Ruby On Rails'],
+    projectImg: "./img/project-screenshot.png",
+    liveLink:
+      "https://bilalrajput09.github.io/first_capstone_project_concert_webpage/",
+    linkToSource:
+      "https://github.com/bilalrajput09/first_capstone_project_concert_webpage",
+    technologies: ["HTML", "CSS", "Javascript"],
   },
   {
     id: 2,
-    fullName: 'Project 2',
+    fullName: "Project 2",
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc..',
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc..",
 
-    liveLink: 'https://bilalrajput09.github.io/My-Portfolio/',
-    linkToSource: 'https://github.com/bilalrajput09',
-    technologies: ['HTML', 'CSS', 'Ruby On Rails'],
+    liveLink: "https://bilalrajput09.github.io/My-Portfolio/",
+    linkToSource: "https://github.com/bilalrajput09",
+    technologies: ["HTML", "CSS", "Ruby On Rails"],
   },
   {
     id: 3,
-    fullName: 'Project 3',
+    fullName: "Project 3",
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.',
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.",
 
-    liveLink: 'https://bilalrajput09.github.io/My-Portfolio/',
-    linkToSource: 'https://github.com/bilalrajput09',
-    technologies: ['HTML', 'CSS', 'Ruby On Rails'],
+    liveLink: "https://bilalrajput09.github.io/My-Portfolio/",
+    linkToSource: "https://github.com/bilalrajput09",
+    technologies: ["HTML", "CSS", "Ruby On Rails"],
   },
   {
     id: 4,
-    fullName: 'Project 4',
+    fullName: "Project 4",
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.',
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.",
 
-    liveLink: 'https://bilalrajput09.github.io/My-Portfolio/',
-    linkToSource: 'https://github.com/bilalrajput09',
-    technologies: ['HTML', 'CSS', 'Ruby On Rails'],
+    liveLink: "https://bilalrajput09.github.io/My-Portfolio/",
+    linkToSource: "https://github.com/bilalrajput09",
+    technologies: ["HTML", "CSS", "Ruby On Rails"],
   },
   {
     id: 5,
-    fullName: 'Project 5',
+    fullName: "Project 5",
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.',
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.",
 
-    liveLink: 'https://bilalrajput09.github.io/My-Portfolio/',
-    linkToSource: 'https://github.com/bilalrajput09',
-    technologies: ['HTML', 'CSS', 'Ruby On Rails'],
+    liveLink: "https://bilalrajput09.github.io/My-Portfolio/",
+    linkToSource: "https://github.com/bilalrajput09",
+    technologies: ["HTML", "CSS", "Ruby On Rails"],
   },
   {
     id: 6,
-    fullName: 'Project 6',
+    fullName: "Project 6",
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.',
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.",
 
-    liveLink: 'https://bilalrajput09.github.io/My-Portfolio/',
-    linkToSource: 'https://github.com/bilalrajput09',
-    technologies: ['HTML', 'CSS', 'Ruby On Rails'],
+    liveLink: "https://bilalrajput09.github.io/My-Portfolio/",
+    linkToSource: "https://github.com/bilalrajput09",
+    technologies: ["HTML", "CSS", "Ruby On Rails"],
   },
 ];
 
 function createProjectCards(projects) {
   projects.forEach((project) => {
-    const projectCard = document.createElement('div');
-    projectCard.classList.add('cards');
+    const projectCard = document.createElement("div");
+    projectCard.classList.add("cards");
     projectCard.innerHTML = `
-              <div class="cards">
+              <div class="cards ${project.class}">
             <h2 class="data">
               ${project.fullName}
             </h2>
             <p class="para">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard.
-              And this si what has not been done daily.
-              has been the industry's standard.
-              And this si what has not been done daily.
+              ${project.description}
             </p>
             <ul class="languages-2">
-              ${project.technologies.map((tech) => `<li class "card-tag" >${tech}</li>`).join('')}
+              ${project.technologies
+                .map((tech) => `<li class "card-tag" >${tech}</li>`)
+                .join("")}
             </ul>
-            <a href="#" class="cards-project open-popup-btn" data-target = "modal-${project.id}" id="card-${project.id}">See Project</a>
+            <a href="#" class="cards-project open-popup-btn" data-target = "modal-${
+              project.id
+            }" id="card-${project.id}">See Project</a>
           </div>
           `;
     works.appendChild(projectCard);
@@ -110,25 +114,25 @@ function createProjectCards(projects) {
 
 const firstProjects = [
   {
-    name: 'Multi Post Stories',
+    name: "Multi Post Stories",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.verita.",
-    technologies: ['HTML', 'CSS', 'Ruby On Rails'],
+    technologies: ["HTML", "CSS", "Ruby On Rails"],
   },
 ];
 
-const mainTagContainer = document.querySelector('.main-container');
-const firstProjectBtn = document.createElement('a');
-firstProjectBtn.innerHTML = 'See Project';
-firstProjectBtn.classList.add('project1');
-firstProjectBtn.href = '#';
-const multistoriesContainer = document.createElement('div');
-multistoriesContainer.classList.add('multistories');
+const mainTagContainer = document.querySelector(".main-container");
+const firstProjectBtn = document.createElement("a");
+firstProjectBtn.innerHTML = "See Project";
+firstProjectBtn.classList.add("project1");
+firstProjectBtn.href = "#";
+const multistoriesContainer = document.createElement("div");
+multistoriesContainer.classList.add("multistories");
 
 function createFirstProject() {
   firstProjects.forEach((firstProject) => {
-    const recentWork = document.createElement('div');
-    recentWork.classList.add('recent-work');
+    const recentWork = document.createElement("div");
+    recentWork.classList.add("recent-work");
     multistoriesContainer.innerHTML = `<h2>${firstProject.name}</h2>
           <p>
             ${firstProject.description}
@@ -147,9 +151,9 @@ function createFirstProject() {
   });
 }
 
-const firstProjectContainer = document.createElement('div');
-firstProjectBtn.addEventListener('click', () => {
-  firstProjectContainer.style.display = 'block';
+const firstProjectContainer = document.createElement("div");
+firstProjectBtn.addEventListener("click", () => {
+  firstProjectContainer.style.display = "block";
   firstProjectContainer.innerHTML = `<div class="main_popup_container" id="modal-3">
     <div class="popup_heading_container">
 
@@ -204,19 +208,19 @@ firstProjectBtn.addEventListener('click', () => {
     </div>
     </div>`;
   document.body.appendChild(firstProjectContainer);
-  const popupCloseImg = document.getElementById('popup-closeImg');
-  popupCloseImg.addEventListener('click', () => {
-    backdrop.classList.add('backdrop-hidden');
-    firstProjectContainer.style.display = 'none';
+  const popupCloseImg = document.getElementById("popup-closeImg");
+  popupCloseImg.addEventListener("click", () => {
+    backdrop.classList.add("backdrop-hidden");
+    firstProjectContainer.style.display = "none";
   });
-  backdrop.classList.remove('backdrop-hidden');
+  backdrop.classList.remove("backdrop-hidden");
 });
 
 function createModals(projects) {
   projects.forEach((project) => {
-    const modal = document.createElement('div');
-    modal.classList.add('main_popup_container');
-    modal.classList.add('modal-hidden');
+    const modal = document.createElement("div");
+    modal.classList.add("main_popup_container");
+    modal.classList.add("modal-hidden");
     modal.id = `modal-${project.id}`;
     modal.innerHTML = `
     <div class="popup_heading_container">
@@ -235,12 +239,14 @@ function createModals(projects) {
 
     <ul class="popup_language_box">
     
-    ${project.technologies.map((tech) => `<li class = "language_box_item" >${tech}</li>`).join('')}
+    ${project.technologies
+      .map((tech) => `<li class = "language_box_item" >${tech}</li>`)
+      .join("")}
 
     </ul>
     <div class="popup_grid_container">
     
-    <img src="./img/popup-img-desktop.png" class="popup_img">
+    <img src="${project.projectImg}" class="popup_img">
 
 
       <p class="popup_para">${project.description}</p>
@@ -279,23 +285,23 @@ function createModals(projects) {
 }
 
 function getbtns() {
-  const btns = document.getElementsByClassName('open-popup-btn');
+  const btns = document.getElementsByClassName("open-popup-btn");
   Array.from(btns).forEach((btn, index) => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener("click", () => {
       const modal = document.getElementById(`modal-${index + 1}`);
-      modal.classList.remove('modal-hidden');
-      backdrop.classList.remove('backdrop-hidden');
+      modal.classList.remove("modal-hidden");
+      backdrop.classList.remove("backdrop-hidden");
     });
   });
 }
 
 function getclosebtns() {
-  const closebtns = document.getElementsByClassName('close_popup_x');
+  const closebtns = document.getElementsByClassName("close_popup_x");
   Array.from(closebtns).forEach((closebtn, index) => {
-    closebtn.addEventListener('click', () => {
+    closebtn.addEventListener("click", () => {
       const modal = document.getElementById(`modal-${index + 1}`);
-      modal.classList.add('modal-hidden');
-      backdrop.classList.add('backdrop-hidden');
+      modal.classList.add("modal-hidden");
+      backdrop.classList.add("backdrop-hidden");
     });
   });
 }
@@ -308,60 +314,36 @@ getbtns();
 
 // form validation starts here
 
-const formOne = document.querySelector('.form-1');
+const formOne = document.querySelector(".form-1");
 const emailRegex = /^[a-z0-9%_]+@[a-z0-9%_.]+\.[a-z]{2,}$/g;
 
-formOne.addEventListener('submit', (event) => {
+formOne.addEventListener("submit", (event) => {
   event.preventDefault();
-  const fullName = document.querySelector('#name').value;
-  const email = document.querySelector('#email').value;
-  const textarea = document.querySelector('#textarea-1').value;
+  const fullName = document.querySelector("#name").value;
+  const email = document.querySelector("#email").value;
+  const textarea = document.querySelector("#textarea-1").value;
 
-  const error = document.querySelector('.error');
-  if (fullName.length === '') {
-    error.innerHTML = 'Please enter full name.';
-    error.style.color = 'red';
+  const error = document.querySelector(".error");
+  if (fullName.length === "") {
+    error.innerHTML = "Please enter full name.";
+    error.style.color = "red";
     return false;
-  } if (!emailRegex.test(email)) {
-    error.innerHTML = 'Please enter email in lowercase.';
-    error.style.color = 'red';
+  }
+  if (!emailRegex.test(email)) {
+    error.innerHTML = "Please enter email in lowercase.";
+    error.style.color = "red";
     return false;
-  } if (textarea.length === '') {
-    error.innerHTML = 'Please enter some text.';
-    error.style.color = 'red';
+  }
+  if (textarea.length === "") {
+    error.innerHTML = "Please enter some text.";
+    error.style.color = "red";
     return false;
   }
   error.innerHTML = '<i class="far fa-check-circle"></i>';
-  error.style.color = 'green';
+  error.style.color = "green";
   formOne.submit();
 
   return true;
 });
 
 // form validation ends here !
-
-// localstorage section starts here !
-const fullName = document.querySelector('#name');
-const email = document.querySelector('#email');
-const textarea = document.querySelector('#textarea-1');
-
-const createLocalstorageObject = () => {
-  const info = {
-    fullName: fullName.value,
-    email: email.value,
-    message: textarea.value,
-  };
-  localStorage.setItem('info', JSON.stringify(info));
-};
-
-// add event listner to form,
-
-formOne.addEventListener('input', createLocalstorageObject);
-
-// convert string to object again,
-
-const infoObject = JSON.parse(localStorage.getItem('info'));
-
-fullName.value = infoObject.fullName;
-email.value = infoObject.email;
-textarea.value = infoObject.message;
