@@ -22,13 +22,17 @@ const works = document.querySelector('.cards-whole');
 const projects = [
   {
     id: 1,
-    fullName: 'Project 1',
+    class: 'project_one',
+    fullName: 'First Capstone Project',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.',
+      'Nescafe concert is a musical event sponsored by Nescafe, a popular coffee brand. The concert features a lineup of talented musicians and performers who entertain the audience with their music and artistry. This repository has been established to showcase the HTML/CSS and fundamental concepts of JavaScript capstone project',
 
-    liveLink: 'https://bilalrajput09.github.io/My-Portfolio/',
-    linkToSource: 'https://github.com/bilalrajput09',
-    technologies: ['HTML', 'CSS', 'Ruby On Rails'],
+    projectImg: './img/project-screenshot.png',
+    liveLink:
+      'https://bilalrajput09.github.io/first_capstone_project_concert_webpage/',
+    linkToSource:
+      'https://github.com/bilalrajput09/first_capstone_project_concert_webpage',
+    technologies: ['HTML', 'CSS', 'Javascript'],
   },
   {
     id: 2,
@@ -87,21 +91,21 @@ function createProjectCards(projects) {
     const projectCard = document.createElement('div');
     projectCard.classList.add('cards');
     projectCard.innerHTML = `
-              <div class="cards">
+              <div class="cards ${project.class}">
             <h2 class="data">
               ${project.fullName}
             </h2>
             <p class="para">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard.
-              And this si what has not been done daily.
-              has been the industry's standard.
-              And this si what has not been done daily.
+              ${project.description}
             </p>
             <ul class="languages-2">
-              ${project.technologies.map((tech) => `<li class "card-tag" >${tech}</li>`).join('')}
+              ${project.technologies
+    .map((tech) => `<li class "card-tag" >${tech}</li>`)
+    .join('')}
             </ul>
-            <a href="#" class="cards-project open-popup-btn" data-target = "modal-${project.id}" id="card-${project.id}">See Project</a>
+            <a href="#" class="cards-project open-popup-btn" data-target = "modal-${
+  project.id
+}" id="card-${project.id}">See Project</a>
           </div>
           `;
     works.appendChild(projectCard);
@@ -235,12 +239,14 @@ function createModals(projects) {
 
     <ul class="popup_language_box">
     
-    ${project.technologies.map((tech) => `<li class = "language_box_item" >${tech}</li>`).join('')}
+    ${project.technologies
+    .map((tech) => `<li class = "language_box_item" >${tech}</li>`)
+    .join('')}
 
     </ul>
     <div class="popup_grid_container">
     
-    <img src="./img/popup-img-desktop.png" class="popup_img">
+    <img src="${project.projectImg}" class="popup_img">
 
 
       <p class="popup_para">${project.description}</p>
@@ -322,11 +328,13 @@ formOne.addEventListener('submit', (event) => {
     error.innerHTML = 'Please enter full name.';
     error.style.color = 'red';
     return false;
-  } if (!emailRegex.test(email)) {
+  }
+  if (!emailRegex.test(email)) {
     error.innerHTML = 'Please enter email in lowercase.';
     error.style.color = 'red';
     return false;
-  } if (textarea.length === '') {
+  }
+  if (textarea.length === '') {
     error.innerHTML = 'Please enter some text.';
     error.style.color = 'red';
     return false;
@@ -339,29 +347,3 @@ formOne.addEventListener('submit', (event) => {
 });
 
 // form validation ends here !
-
-// localstorage section starts here !
-const fullName = document.querySelector('#name');
-const email = document.querySelector('#email');
-const textarea = document.querySelector('#textarea-1');
-
-const createLocalstorageObject = () => {
-  const info = {
-    fullName: fullName.value,
-    email: email.value,
-    message: textarea.value,
-  };
-  localStorage.setItem('info', JSON.stringify(info));
-};
-
-// add event listner to form,
-
-formOne.addEventListener('input', createLocalstorageObject);
-
-// convert string to object again,
-
-const infoObject = JSON.parse(localStorage.getItem('info'));
-
-fullName.value = infoObject.fullName;
-email.value = infoObject.email;
-textarea.value = infoObject.message;

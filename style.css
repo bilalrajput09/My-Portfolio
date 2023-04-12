@@ -42,7 +42,7 @@ header {
   margin: 1.5rem;
   text-decoration: none;
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
 
@@ -61,7 +61,7 @@ header {
 
 .intro1 {
   margin: 120px 0 0 8px;
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   letter-spacing: 0.37px;
   font-size: 56px;
   line-height: 64px;
@@ -70,7 +70,7 @@ header {
 
 .intro2 {
   margin: 0.5rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
   line-height: 32px;
   font-weight: 700;
@@ -80,7 +80,7 @@ header {
 .discription {
   max-width: 50%;
   margin: 0.5rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -141,14 +141,14 @@ header {
 }
 
 .multistories > h2 {
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-weight: 400;
   font-size: 40px;
   line-height: 52px;
 }
 
 .multistories > p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
@@ -160,14 +160,14 @@ header {
   font-size: 32px;
   text-align: center;
   margin-top: 120px;
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   line-height: 52px;
 }
 
 .main-part > p {
   margin-bottom: 12px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -184,7 +184,7 @@ header {
 
 .languages-1 > li {
   padding: 10px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   text-decoration: none;
   font-weight: bolder;
   font-size: 15px;
@@ -221,7 +221,7 @@ header {
   font-weight: bolder;
   color: white;
   text-decoration: none;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .cards-whole {
@@ -235,7 +235,7 @@ header {
 }
 
 .cards {
-  background-image: url(./img/project-img.png);
+  /* background-image: url(./img/project-img.png); */
   background-repeat: no-repeat;
   background-size: cover;
   width: 327px;
@@ -250,7 +250,7 @@ header {
   margin-bottom: 10px;
   margin-left: 1rem;
   margin-right: 16px;
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -262,7 +262,7 @@ header {
   margin-bottom: 12px;
   margin-left: 16px;
   margin-right: 16px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -276,7 +276,7 @@ header {
   padding: 12px;
   align-self: center;
   text-decoration: none;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -289,12 +289,11 @@ header {
 .languages-2 {
   display: flex;
   flex-direction: row;
-  margin-top: 15px;
   gap: 10px;
 }
 
 .languages-2 > li {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   text-decoration: none;
   font-weight: bolder;
   font-size: 15px;
@@ -307,6 +306,12 @@ header {
   padding: 10px 10px;
   margin-left: 1em;
   margin-bottom: 10px;
+}
+
+.project_one {
+  background-color: rgb(0, 0, 0, 80%);
+  background-blend-mode: multiply;
+  background-image: url("./img/project-screenshot.png");
 }
 
 .css2 {
@@ -334,7 +339,7 @@ header {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   margin-bottom: 24px;
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-weight: 400;
   font-size: 72px;
   line-height: 88px;
@@ -342,7 +347,7 @@ header {
 }
 
 .about-me > p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   color: white;
   font-weight: 400;
@@ -361,7 +366,7 @@ header {
   text-decoration: none;
   color: white;
   background-color: #ff6b00;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -422,7 +427,7 @@ header {
 }
 
 .frameworks-1 > h2 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -446,7 +451,7 @@ header {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   margin-top: 0;
 }
 
@@ -456,7 +461,7 @@ header {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   margin-top: 0;
 }
 
@@ -466,7 +471,7 @@ header {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   margin-top: 0;
 }
 
@@ -479,7 +484,7 @@ header {
   text-align: center;
   list-style: none;
   color: white;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .languages-3 > .one {
@@ -528,7 +533,7 @@ header {
 }
 
 .contact h2 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
@@ -579,7 +584,7 @@ input::placeholder {
 
 #get-in-touch {
   text-decoration: none;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -639,7 +644,7 @@ footer {
   color: #fff5e1;
   text-decoration: none;
   font-size: 32px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   line-height: 44px;
 }
@@ -880,7 +885,7 @@ footer {
     justify-content: center;
     align-items: center;
     margin-right: 151px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
@@ -996,7 +1001,7 @@ footer {
   }
 
   .cards:hover {
-    background-image: url(./img/after-hover.png);
+    background-blend-mode: normal;
     border: 2px solid black;
   }
 
@@ -1091,7 +1096,7 @@ footer {
   .contact > h2 {
     margin-left: 135px;
     font-size: 40px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 700;
     line-height: 52px;
@@ -1102,7 +1107,7 @@ footer {
     margin-right: 450px;
     padding: 20px;
     margin-bottom: 154px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 17px;
   }
 
@@ -1111,5 +1116,11 @@ footer {
     height: 400px;
     flex-direction: row;
     justify-content: space-evenly;
+  }
+
+  .project_one {
+    background-color: rgb(0, 0, 0, 80%);
+    background-blend-mode: multiply;
+    background-image: url("./img/project-screenshot.png");
   }
 }
