@@ -1117,6 +1117,7 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
   }
+
   .project_one {
     background-color: rgb(0, 0, 0, 80%);
     background-blend-mode: multiply;
